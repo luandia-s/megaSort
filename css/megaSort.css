@@ -1,0 +1,104 @@
+header {
+    position                  : sticky;
+    display                   : flex;
+    align-items               : center;
+    justify-content           : center;
+    width                     : 100vw;
+    height                    : 30vh;
+    background-color          : #438F63;
+}
+
+.logo .logo-title {
+    font-size     : 3rem;
+    letter-spacing: 2px;
+    color         : #ffffff;
+}
+
+.logo .slogan {
+    font-size: 1.1rem;
+    color    : #343c3d;
+}
+
+.image-logo {
+    margin          : 5px;
+    display         : flex;
+    align-items     : center;
+    justify-content : center;
+    width           : 120px;
+    height          : 120px;
+    font-size       : 3rem;
+    border-radius   : 50%;
+    background-color: #ffffff;
+}
+
+.container {
+    display        : flex;
+    align-items    : center;
+    justify-content: center;
+    width          : 100vw;
+    height         : 100%;
+}
+
+.content {
+    display        : flex;
+    width          : 80%;
+    height         : 100%;
+    justify-content: space-evenly;
+    flex-wrap      : wrap;
+    margin-top     : 30px;
+}
+
+.content form {
+    display       : flex;
+    flex-direction: column;
+}
+
+.result-sort {
+    display: block;
+    max-width  : 350px;
+    height : 300px;
+}
+
+form label {
+    font-size: 1.2rem;
+    margin   : 8px;
+}
+
+.result-sort label {
+    font-size: 1.2rem;
+    margin   : 8px;
+}
+
+form input,
+select {
+    width        : 350px;
+    height       : 60px;
+    border-radius: 10px;
+    outline      : none;
+    border       : none;
+    background   : #e2dbdb;
+    font-family  : 'Quantico', sans-serif;
+    font-size    : 1.2rem;
+    padding      : 15px;
+    color        : #81868d;
+    overflow     : hidden;
+}
+
+.results {
+    margin-top: 20px;
+    width    : 350px;
+    display  : flex;
+    flex-wrap: wrap;
+}
+
+.number {
+    margin         : 5px;
+    display        : flex;
+    align-items    : center;
+    text-align     : center;
+    justify-content: center;
+    width          : 70px;
+    height         : 70px;
+    border-radius  : 50%;
+    background     : linear-gradient(180deg, #FFFFFF 0%, rgba(107, 135, 113, 0.104167) 99.99%, rgba(112, 159, 157, 0) 100%);
+}
