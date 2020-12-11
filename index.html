@@ -25,10 +25,10 @@
     </header>
     <div class="container">
         <div class="content">
-            <form action="">
+            <form id="form" name="formNumbers" action="#">
                 <label for="">Escolha o tipo do jogo:</label>
-                <select name="games">
-                    <option selected disabled>selecione uma opção</option>
+                <select id="games" required>
+                    <option value="">selecione uma opção</option>
                     <option value="mega-sena">mega-sena</option>
                     <option value="dupla-sena">dupla-sena</option>
                     <option value="quina">quina</option>
@@ -38,25 +38,18 @@
                     <option value="federal">federal</option>
                 </select>
                 <label for="numbers-played">Quantos números irá jogar?</label>
-                <input type="text" id="numbers-played">
+                <input type="text" id="numbers-played" required>
+                <button class="btn" onclick="generateNumbers()">sortear</button>
             </form>
 
             <div class="result-sort">
-                <label>Números sorteados:</label>   
-                <div class="results">
-                    <div class="number">13</div>
-                    <div class="number">13</div>
-                    <div class="number">13</div>
-                    <div class="number">13</div>
-                    <div class="number">13</div>
-                    <div class="number">13</div>
-                    <div class="number">13</div>
-                    <div class="number">13</div>
-                    <div class="number">13</div>
+                <label>Números sorteados:</label>
+                <div class="results" id="results">
                 </div>
             </div>
         </div>
     </div>
+    <script src="script/app.js"></script>
 </body>
 
 </html>
