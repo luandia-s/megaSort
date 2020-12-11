@@ -1,11 +1,11 @@
 header {
-    position                  : sticky;
-    display                   : flex;
-    align-items               : center;
-    justify-content           : center;
-    width                     : 100vw;
-    height                    : 30vh;
-    background-color          : #438F63;
+    position        : sticky;
+    display         : flex;
+    align-items     : center;
+    justify-content : center;
+    width           : 100vw;
+    height          : 30vh;
+    background-color: #438F63;
 }
 
 .logo .logo-title {
@@ -54,9 +54,10 @@ header {
 }
 
 .result-sort {
-    display: block;
-    max-width  : 350px;
-    height : 300px;
+    display  : flex;
+    flex-direction: column;
+    max-width: 350px;
+    height   : 300px;
 }
 
 form label {
@@ -84,11 +85,26 @@ select {
     overflow     : hidden;
 }
 
+.btn {
+    width        : 350px;
+    height       : 60px;
+    border-radius: 10px;
+    outline      : none;
+    border       : none;
+    background   : #58ca67;
+    font-family  : 'Quantico', sans-serif;
+    font-size    : 1.2rem;
+    padding      : 15px;
+    color        : #e8eef7;
+    margin-top       : 20px;
+    margin-bottom       : 20px;
+}
+
 .results {
     margin-top: 20px;
-    width    : 350px;
-    display  : flex;
-    flex-wrap: wrap;
+    width     : 350px;
+    display   : flex;
+    flex-wrap : wrap;
 }
 
 .number {
@@ -100,5 +116,7 @@ select {
     width          : 70px;
     height         : 70px;
     border-radius  : 50%;
+    font-weight    : bold;
+    font-size      : 1rem;
     background     : linear-gradient(180deg, #FFFFFF 0%, rgba(107, 135, 113, 0.104167) 99.99%, rgba(112, 159, 157, 0) 100%);
 }
