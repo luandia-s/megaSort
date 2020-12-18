@@ -29,17 +29,17 @@
                 <label for="">Escolha o tipo do jogo:</label>
                 <select id="games" required>
                     <option value="">selecione uma opção</option>
-                    <option value="6">mega-sena</option>
-                    <option value="git checkout dupla-sena">dupla-sena</option>
+                    <option value="mega-sena">mega-sena</option>
+                    <!-- <option value="">dupla-sena</option> -->
                     <option value="quina">quina</option>
-                    <option value="lotofacil">lotofácil</option>
+                    <option value="lotofácil">lotofácil</option>
                     <option value="lotomania">lotomania</option>
-                    <option value="timemania">time-mania</option>
-                    <option value="federal">federal</option>
+                    <!-- <option value="timemania">time-mania</option> -->
+                    <!-- <option value="federal">federal</option> -->
                 </select>
                 <label for="numbers-played">Quantos números irá jogar?</label>
-                <input type="text" id="numbers-played" required>
-                <button class="btn" onclick="generateNumbers()">sortear</button>
+                <input type="number" id="numbers-played" required>
+                <button class="btn" id="enviar">sortear</button>
             </form>
 
             <div class="result-sort">
