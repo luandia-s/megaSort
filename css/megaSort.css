@@ -47,7 +47,7 @@ header {
     margin-top     : 30px;
 }
 
-.content .form {
+.content form {
     display       : flex;
     flex-direction: column;
 }
@@ -59,7 +59,7 @@ header {
     height   : 300px;
 }
 
-.form label {
+form label {
     font-size: 1.2rem;
     margin   : 8px;
 }
@@ -69,7 +69,7 @@ header {
     margin   : 8px;
 }
 
-.form input,
+form input,
 select {
     width        : 350px;
     height       : 60px;
