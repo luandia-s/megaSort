@@ -37,6 +37,7 @@ btn.addEventListener('click', generateNumbers)
 
 function generateNumbers() {
 
+    numberDrawn = []
     let input = document.getElementById('numbers-played')
     let max = input.getAttribute('max')
     let min = input.getAttribute('min')
@@ -97,5 +98,4 @@ function updateScren() {
         divNumber.appendChild(textDivNumber)
         results.appendChild(divNumber)
     })
-    numberDrawn = []
 }
