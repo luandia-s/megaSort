@@ -90,6 +90,7 @@ function generateNumbers() {
 
 function updateScren() {
     let results = document.getElementById('results')
+    results.innerHTML = ""
     numberDrawn.forEach(item => {
         let divNumber = document.createElement('div')
         let textDivNumber = document.createTextNode(item.toString())
