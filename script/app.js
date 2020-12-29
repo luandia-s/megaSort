@@ -1,6 +1,6 @@
 let numberDrawn = []
 let results = document.getElementById('results')
-let btn = document.getElementById('enviar')
+let btn = document.getElementById('submit')
 let select = document.getElementById('games')
 let inputNumbers = document.getElementById('numbers-played')
 
@@ -11,7 +11,6 @@ select.addEventListener('change', (event) => {
             inputNumbers.value = '6'
             inputNumbers.setAttribute('min', '6')
             inputNumbers.setAttribute('max', '15')
-            console.log(inputNumbers)
             break;
         case 'quina':
             inputNumbers.value = '5'
