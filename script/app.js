@@ -1,6 +1,5 @@
 let numberDrawn = []
-let results = document.getElementById('results')
-let btn = document.getElementById('submit')
+let btn = document.getElementById('button')
 let select = document.getElementById('games')
 let inputNumbers = document.getElementById('numbers-played')
 
@@ -33,9 +32,7 @@ select.addEventListener('change', (event) => {
     }
 })
 
-btn.addEventListener('click', generateNumbers)
-
-function generateNumbers() {
+const generateNumbers = () => {
 
     numberDrawn = []
     let input = document.getElementById('numbers-played')
@@ -87,6 +84,8 @@ function generateNumbers() {
 
     updateScren()
 }
+
+btn.addEventListener('click', generateNumbers)
 
 function updateScren() {
     let results = document.getElementById('results')
