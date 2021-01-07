@@ -2,25 +2,27 @@ let numberDrawn = []
 let btn = document.getElementById('button')
 let select = document.getElementById('games')
 let inputNumbers = document.getElementById('numbers-played')
+let spanNumber = document.getElementById('qtdNumbers')
 
 select.addEventListener('change', (event) => {
-    console.log(event.target.value)
     switch (event.target.value) {
         case 'mega-sena':
             inputNumbers.value = '6'
             inputNumbers.setAttribute('min', '6')
             inputNumbers.setAttribute('max', '15')
+            spanNumber.innerHTML = 'Escolha de 6 à 15'
             break;
         case 'quina':
             inputNumbers.value = '5'
             inputNumbers.setAttribute('min', '5')
             inputNumbers.setAttribute('max', '15')
-
+            spanNumber.innerHTML = 'Escolha de 5 à 15'
             break;
         case 'lotofácil':
             inputNumbers.value = '15'
             inputNumbers.setAttribute('min', '15')
             inputNumbers.setAttribute('max', '18')
+            spanNumber.innerHTML = 'Escolha de 15 à 18'
             break;
         case 'lotomania':
             inputNumbers.value = '50'

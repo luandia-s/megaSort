@@ -120,3 +120,8 @@ select {
     font-size      : 1rem;
     background     : linear-gradient(180deg, #FFFFFF 0%, rgba(107, 135, 113, 0.104167) 99.99%, rgba(112, 159, 157, 0) 100%);
 }
+
+#qtdNumbers {
+    margin: 5px;
+    font-size: .9rem;
+}
