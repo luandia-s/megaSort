@@ -125,3 +125,9 @@ select {
     margin: 5px;
     font-size: .9rem;
 }
+
+#information {
+    margin: 5px;
+    font-size: .9rem;
+    color: #cf4848;
+}

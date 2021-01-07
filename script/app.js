@@ -3,6 +3,7 @@ let btn = document.getElementById('button')
 let select = document.getElementById('games')
 let inputNumbers = document.getElementById('numbers-played')
 let spanNumber = document.getElementById('qtdNumbers')
+let spanInformation = document.getElementById('information')
 
 select.addEventListener('change', (event) => {
     switch (event.target.value) {
@@ -38,10 +39,11 @@ const generateNumbers = () => {
 
     numberDrawn = []
     let input = document.getElementById('numbers-played')
-    let max = input.getAttribute('max')
-    let min = input.getAttribute('min')
+    let max = parseInt(input.getAttribute('max'))
+    let min = parseInt(input.getAttribute('min'))
+    console.log(typeof max, typeof min)
 
-    if (input.value >= min || input.value <= max) {
+    if (input.value >= min && input.value <= max) {
         switch (select.value) {
             case 'mega-sena':
                 while (numberDrawn.length < input.value) {
@@ -50,6 +52,7 @@ const generateNumbers = () => {
                         numberDrawn.push(numeroSorteado)
                     }
                 }
+                spanInformation.innerHTML = ''
                 break;
             case 'quina':
                 while (numberDrawn.length < inputNumbers.value) {
@@ -66,6 +69,7 @@ const generateNumbers = () => {
                         numberDrawn.push(numeroSorteado)
                     }
                 }
+                spanInformation.innerHTML = ''
                 break;
             case 'lotomania':
                 while (numberDrawn.length < inputNumbers.value) {
@@ -74,12 +78,13 @@ const generateNumbers = () => {
                         numberDrawn.push(numeroSorteado)
                     }
                 }
+                spanInformation.innerHTML = ''
                 break;
             default:
                 break;
         }
     } else {
-        window.alert('preencha os campos corretamente!')
+        spanInformation.innerHTML = 'Informe os dados corretamente'
     }
 
     numberDrawn.sort((a, b) => a - b)

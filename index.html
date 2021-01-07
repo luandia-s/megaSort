@@ -27,7 +27,7 @@
         <div class="content">
             <div class="game" id="game">
                 <label for="">Escolha o tipo do jogo:</label>
-                <select id="games" required>
+                <select name="games" id="games" required>
                     <option value="">selecione uma opção</option>
                     <option value="mega-sena">mega-sena</option>
                     <option value="quina">quina</option>
@@ -37,6 +37,7 @@
                 <label for="numbers-played">Quantos números irá jogar?</label>
                 <input type="number" id="numbers-played" required>
                 <span id="qtdNumbers"></span>
+                <span id="information"></span>
                 <a href="#results" class="btn" id="button">sortear</a>
                 
             </div>
