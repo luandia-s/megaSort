@@ -10,19 +10,19 @@ select.addEventListener('change', (event) => {
             inputNumbers.value = '6'
             inputNumbers.setAttribute('min', '6')
             inputNumbers.setAttribute('max', '15')
-            spanNumber.innerHTML = 'Escolha de 6 à 15'
+            spanNumber.innerHTML = 'Escolha de 6 à 15 números'
             break;
         case 'quina':
             inputNumbers.value = '5'
             inputNumbers.setAttribute('min', '5')
             inputNumbers.setAttribute('max', '15')
-            spanNumber.innerHTML = 'Escolha de 5 à 15'
+            spanNumber.innerHTML = 'Escolha de 5 à 15 números'
             break;
         case 'lotofácil':
             inputNumbers.value = '15'
             inputNumbers.setAttribute('min', '15')
             inputNumbers.setAttribute('max', '18')
-            spanNumber.innerHTML = 'Escolha de 15 à 18'
+            spanNumber.innerHTML = 'Escolha de 15 à 18 números'
             break;
         case 'lotomania':
             inputNumbers.value = '50'
